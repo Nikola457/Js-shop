@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <script src="store.js" async></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Register</title>
+    </head>
+  <body>
+    <p id="cookies"></p>
+    <ul>
+    <li><a href="index.html" id="link1">Home</div></a></li>
+    <li><a href="login.html" id="link2">Login</a></li></ul>
+    <img src="bg.jpg" alt="" id="regbg">
+<img src="undraw.svg"  id="svg" alt="">
+<form class="form" onsubmit="return Register()">
+<div class="input">
+  <div>
+<input type="text" name="Username" id="Username" placeholder="Username"value=""><label id="ibruser" style="color:red; visibility:hidden;">Invalid</label>
+<input type="password" name="Password" id="Password" placeholder="Password" value=""><label id="ibruser1" style="color:red; visibility:hidden;">Invalid</label>
+<input type="password" name="RePassword" id="RePassword" placeholder="Re-enter Your Password" value="" ><label id="ibruser2" style="color:red; visibility:hidden;">Invalid</label><label id="match" style="color:red; visibility:hidden;">Passwords<br><br> Doesnt<br><br> Match!</label>
+<input type="email" name="Email" value="" id="Email" placeholder="Enter Email"><label id="ibruser3"  style="color:red; visibility:hidden;">Invalid</label>
+<img src="undrawmale.svg" id="profilepic" name="undrawmale" alt="">
+<select class="select" name="select" onchange="undrawmale.src=form.select.options[form.select.selectedIndex].value;">
+  <option value="">Select Gender:</option>
+  <option   value="undrawmale.svg" id="Male">Male</option>
+  <option value="undrawfemale.svg" id="Female">Female</option>
+</select>
+<a href="login.html" id="logintext"> Already have an email? LOG IN! </a>
+<button type="submit" name="button" id="button11"  onclick="Register()"class="register">Register</button>
+<p class="json">This item is added</p>
+</div>
+</form>
+<script>
+let info=[];
+const  informations= (ev) => {
+  ev.preventDefault();
+  let user = {
+      id:Date.now(),
+      username: document.getElementById('Username').value,
+      password :document.getElementById('Password').value,
+      email: document.getElementById('Email').value
+  }
+  info.push(user);
+  document.querySelector('form').reset();
+  console.warn('added', {info});
+  let pre = document.querySelector('json');
+  pre.textContent = '\n' + JSON.stringify(info, '\t', 2);
+  localStorage.setItem('MyMovieList', JSON.stringify(info));
+}
+document.addEventListener('DOMContentLoaded', ()=>{
+  document.getElementById('button11').addEventListener('click', informations);
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

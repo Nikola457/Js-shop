@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The Courses</title>
+        <meta name="description" content="This is the description">
+        <link rel="stylesheet" href="style.css">
+        <script src="store.js" async></script>
+    </head>
+    <body>
+      <div class="bg"></div>
+  <ul>
+  <li><a href="register.html" id="link1" style="color:white;">Register</a></li>
+  <li><a href="login.html" id="link2" style="color:white;">Login</a></li>
+  </ul>
+  <div>
+    <input type="checkbox" class="checkbox" id="chk">
+    <label class="label" for="chk">
+      <div class="ball"></div>
+    </label>
+  </div>
+  <img src="bg1.png" class="bg1" alt="">
+  <img src="focus.svg" class="focus" alt="">
+  <h2>Your Global Career Starts Here.<br>
+  From Anywhere.<h2>
+    <h3>Become a remote software developer, no matter where you're from.<br> Learn with Microverse and connect to life-changing opportunities.
+  <br>Don’t pay anything until you get a job!</h3>
+  <button type="button" class="Joinus" name="button"><a href="#course">Join Us!</a></button>
+        <section class="container content-section">
+            <h2 class="section-header" >COURSES</h2>
+            <div class="shop-items" id="course">
+                <div class="shop-item">
+                    <span class="shop-item-title"><p>LEARN HTML CSS</p></span>
+                    <p class="abouthtml">Hypertext Markup Language (HTML) is the standard markup language for documents designed to be displayed in a web browser. It can be assisted by technologies such as Cascading Style Sheets (CSS) and scripting languages such as JavaScript.</p>
+                    <img class="shop-item-image" src="Images/Album 1.jfif">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price"><p>$12.99</p></span>
+                        <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item">
+                    <span class="shop-item-title">LEARN PHP</span>
+                    <p class="aboutphp">This highly interactive course introduces you to fundamental programming concepts in PHP, one of the most popular languages in the world. It begins with a simple Hello world program and proceeds on to cover common concepts such as Conditional Statements, Loop Statements, and Logic in PHP.
+
+It then reflects upon the idea of Functions and Arrays, as well as the power they give to the programmer to write better code.
+</p>
+                    <img class="shop-item-image" src="Images/Album 2.png" id="phpimage">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$14.99</span>
+                        <button class="btn btn-primary shop-item-button"type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shop-item" id="js1">
+                    <span class="shop-item-title">LEARN JAVASCRIPT</span><p class="aboutjs">
+JavaScript® (often shortened to JS) is a lightweight, interpreted, object-oriented language with
+ first-class functions, and is best known as the scripting language for Web pages, but it's used
+ in many non-browser environments as well. It is a prototype-based,
+ multi-paradigm scripting language that is dynamic, and supports object-oriented, imperative, and functional programming styles.
+                    </p>
+                    <img class="shop-item-image" src="Images/Album 3.png">
+                    <div class="shop-item-details">
+                        <span class="shop-item-price">$9.99</span>
+                        <button class="btn btn-primary shop-item-button" type="button" id="addtocart">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+
+        <section class="container content-section" id="container">
+            <h2 class="section-header">CART</h2>
+            <div class="cart-row">
+                <span class="cart-item cart-header cart-column">ITEM</span>
+                <span class="cart-price cart-header cart-column">PRICE</span>
+                <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+            </div>
+            <div class="cart-items">
+            </div>
+            <div class="cart-total">
+                <strong class="cart-total-title">Total</strong>
+                <span class="cart-total-price">$0</span>
+            </div>
+            <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+        </section>
+
+    </body>
+</html>
